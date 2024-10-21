@@ -1,8 +1,8 @@
-package Classes;
+package moduls;
 
-import Interfaces.AbstractFactory;
-import Interfaces.Address;
-import Interfaces.PhoneNumber;
+import interfaces.AbstractFactory;
+import interfaces.Address;
+import interfaces.PhoneNumber;
 
 public class SpainFactory implements AbstractFactory {
 

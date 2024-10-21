@@ -1,6 +1,6 @@
-package Classes;
+package moduls;
 
-import Interfaces.Address;
+import interfaces.Address;
 
 public class SpainAddress implements Address {
 

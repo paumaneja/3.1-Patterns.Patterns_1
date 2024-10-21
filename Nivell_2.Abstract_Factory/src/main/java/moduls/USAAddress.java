@@ -1,6 +1,6 @@
-package Classes;
+package moduls;
 
-import Interfaces.Address;
+import interfaces.Address;
 
 public class USAAddress implements Address {
 
@@ -17,6 +17,7 @@ public class USAAddress implements Address {
 
     @Override
     public String getFormattedAddress() {
+
         return street_num + " " + street + ". " + postal_code + "(ZIP) " + country;
     }
 }

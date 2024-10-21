@@ -10,5 +10,8 @@
         <module name="Nivell_1.Singleton" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Nivell_2.Abstract_Factory1" target="21" />
+    </bytecodeTargetLevel>
   </component>
 </project>

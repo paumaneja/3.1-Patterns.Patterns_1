@@ -1,6 +1,6 @@
-package Classes;
+package moduls;
 
-import Interfaces.PhoneNumber;
+import interfaces.PhoneNumber;
 
 public class USAPhoneNumber implements PhoneNumber {
 
@@ -8,6 +8,7 @@ public class USAPhoneNumber implements PhoneNumber {
 
     @Override
     public String getFormattedPhoneNumber() {
+
         return phoneNumber;
     }
 }
