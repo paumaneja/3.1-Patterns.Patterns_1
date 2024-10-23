@@ -6,14 +6,13 @@ public class SpainPhoneNumber implements PhoneNumber {
 
     private String phoneNumber;
 
-    public SpainPhoneNumber(){
-
-        this.phoneNumber = "+34 666 66 66";
+    @Override
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 
     @Override
-    public String getFormattedPhoneNumber() {
-
+    public String getPhoneNumber() {
         return phoneNumber;
     }
 }

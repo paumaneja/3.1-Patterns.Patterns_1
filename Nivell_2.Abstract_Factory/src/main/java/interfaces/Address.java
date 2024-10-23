@@ -1,7 +1,7 @@
 package interfaces;
 
 public interface Address {
-
-    String getFormattedAddress();
+    void setAddress(String address);
+    String getAddress();
 
 }

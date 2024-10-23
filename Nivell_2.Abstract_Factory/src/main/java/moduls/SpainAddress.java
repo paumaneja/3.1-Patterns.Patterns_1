@@ -4,23 +4,15 @@ import interfaces.Address;
 
 public class SpainAddress implements Address {
 
-    private String street;
-    private int street_num;
-    private int floor;
-    private int door;
-    private String postal_code;
-    private final String country = "SPAIN";
+    private String address;
 
-    public SpainAddress(){
-        this.street = "Calle Inventada";
-        this.street_num = 1;
-        this.floor = 1;
-        this.door = 1;
-        this.postal_code = "12345";
+    @Override
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     @Override
-    public String getFormattedAddress() {
-        return street + ", " + street_num + ", " + floor + " - " + door + ". " + postal_code + "(ZIP) " + country;
+    public String getAddress() {
+        return address;
     }
 }

@@ -4,20 +4,15 @@ import interfaces.Address;
 
 public class USAAddress implements Address {
 
-    private String street;
-    private int street_num;
-    private String postal_code;
-    private final String country = "USA";
+    private String address;
 
-    public USAAddress(){
-        this.street = "Calle Inventada";
-        this.street_num = 1;
-        this.postal_code = "12345";
+    @Override
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     @Override
-    public String getFormattedAddress() {
-
-        return street_num + " " + street + ". " + postal_code + "(ZIP) " + country;
+    public String getAddress() {
+        return address;
     }
 }
