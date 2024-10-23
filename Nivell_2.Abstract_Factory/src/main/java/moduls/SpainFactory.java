@@ -1,10 +1,10 @@
 package moduls;
 
-import interfaces.AbstractFactory;
+import interfaces.InternacionalFactory;
 import interfaces.Address;
 import interfaces.PhoneNumber;
 
-public class SpainFactory implements AbstractFactory {
+public class SpainFactory implements InternacionalFactory {
 
     @Override
     public Address createAddress() {

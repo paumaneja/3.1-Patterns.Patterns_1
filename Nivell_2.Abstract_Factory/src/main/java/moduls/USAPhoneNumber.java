@@ -4,11 +4,15 @@ import interfaces.PhoneNumber;
 
 public class USAPhoneNumber implements PhoneNumber {
 
-    private String phoneNumber = "+1 999 999 9999";
+    private String phoneNumber;
 
     @Override
-    public String getFormattedPhoneNumber() {
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
 
+    @Override
+    public String getPhoneNumber() {
         return phoneNumber;
     }
 }

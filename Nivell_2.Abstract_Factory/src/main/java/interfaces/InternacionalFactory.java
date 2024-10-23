@@ -1,6 +1,6 @@
 package interfaces;
 
-public interface AbstractFactory {
+public interface InternacionalFactory {
 
     Address createAddress();
     PhoneNumber createPhoneNumber();

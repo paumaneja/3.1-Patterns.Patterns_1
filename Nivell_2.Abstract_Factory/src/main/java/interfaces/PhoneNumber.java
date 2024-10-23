@@ -1,7 +1,7 @@
 package interfaces;
 
 public interface PhoneNumber {
-
-    String getFormattedPhoneNumber();
+    void setPhoneNumber(String phoneNumber);
+    String getPhoneNumber();
 
 }
