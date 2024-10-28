@@ -11,6 +11,8 @@ import java.util.Scanner;
 public class AddressBookManager {
 
     private InternacionalFactory factory;
+    private List<Address> addresses = new ArrayList<>();
+    private List<PhoneNumber> phoneNumbers = new ArrayList<>();
 
     public AddressBookManager(InternacionalFactory factory){
         this.factory = factory;
@@ -23,11 +25,13 @@ public class AddressBookManager {
         System.out.println("Enter address: ");
         String inputAddress = input.nextLine();
         address.setAddress(inputAddress);
+        addresses.add(address);
 
         PhoneNumber phoneNumber = factory.createPhoneNumber();
         System.out.println("Enter phone number: ");
         String inputPhone = input.nextLine();
         phoneNumber.setPhoneNumber(inputPhone);
+        phoneNumbers.add((phoneNumber));
 
         if(validateAddress(inputAddress) && validatePhoneNumber(inputPhone)) {
             System.out.println("Entry added: " + address.getAddress() + ", " + phoneNumber.getPhoneNumber());
@@ -41,7 +45,16 @@ public class AddressBookManager {
     }
 
     private boolean validatePhoneNumber(String phoneNumber) {
-        return phoneNumber.matches("\\d{10,}"); // Aquí podemos controlar el formato del telf
+        return phoneNumber.matches("\\d+"); // Aquí podemos controlar el formato del telf
+    }
+
+    public void showEntries(){
+        for (Address a : addresses) {
+            System.out.println(a.getAddress());
+        }
+        for (PhoneNumber p : phoneNumbers){
+            System.out.println(p.getPhoneNumber());
+        }
     }
 
 }

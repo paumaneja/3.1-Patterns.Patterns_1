@@ -8,7 +8,7 @@ public class SpainPhoneNumber implements PhoneNumber {
 
     @Override
     public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
+        this.phoneNumber = "+34" + phoneNumber;
     }
 
     @Override

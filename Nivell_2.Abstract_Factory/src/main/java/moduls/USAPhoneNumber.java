@@ -8,7 +8,7 @@ public class USAPhoneNumber implements PhoneNumber {
 
     @Override
     public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
+        this.phoneNumber = "+1" + phoneNumber;
     }
 
     @Override
